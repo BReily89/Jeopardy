@@ -2,7 +2,6 @@ header {
     text-align: center;
     color:#F4D03F;
     background-color: blue;
-    padding:auto;
     font-size: 64px;
 }
 body {
@@ -16,6 +15,7 @@ body {
 }
 .Categories {
     text-align: center;
+
 }
 th {
    text-align: center; 
@@ -24,3 +24,4 @@ th {
 td{
     color:#F4D03F;
 }
+
