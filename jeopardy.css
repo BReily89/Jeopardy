@@ -1,0 +1,26 @@
+header {
+    text-align: center;
+    color:#F4D03F;
+    background-color: blue;
+    padding:auto;
+    font-size: 64px;
+}
+body {
+    align-content: center;
+    background-color: blue;
+    font-size: 40px;
+}
+.Game-Board {
+    text-align: center;
+    background-color: blue;
+}
+.Categories {
+    text-align: center;
+}
+th {
+   text-align: center; 
+    Color:#F4D03F;
+}
+td{
+    color:#F4D03F;
+}
