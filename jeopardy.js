@@ -101,9 +101,8 @@ const potentPotablesQuestions = [
     },
     {
         question: 'In the 2003 movie "Lost in Translation", which whiskey brand is Bob Harris (portrayed by Bill Murray) hired to advertise in Tokyo for $2 million?',
-        answer: 'Jameson, Nikka, Suntory, Courvoisi',
-
-        choices: 'Novemeber, September, December, August',
+        answer: 'Suntory',
+        choices: 'Jameson, Nikka, Suntory, Courvoisi',
         points: 400,
     },
 ];
@@ -340,5 +339,10 @@ $('.potentPotablesFourHundred').click(function ($event) {
     }
 });
 
+$('.NewGame').click(function ($event){
+   form.reset()
+    
+
+})
 
 
