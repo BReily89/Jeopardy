@@ -1,9 +1,9 @@
 
-const EarthQuestions = [
+const earthQuestions = [
     {
         question: 'Earth is also know as *blank rock* from the sun',
-        answer: 'a',
-        choices: 'a',
+        answer: '4th',
+        choices:'1st, 3ed, 4th, 5th',
         points: 100,
     },
     {
@@ -25,20 +25,102 @@ const EarthQuestions = [
         points: 400,
     },
 ];
+   
+ const windQuestions = [
+        {
+            question: 'Wind is caused by',
+            answer: 'Atmospheric Pressure',
+            choices:'Atmospheric pressure, God blowing dandelions, butterfly wings, Hurricanes',
+            points: 100,
+        },
+        {
+            question: 'This mountain recorded the highest wind speed  ',
+            answer: 'Mount Washington',
+            choices: 'Mount Everest , Mount Kilamanjaro, Mount Trashmoore, Mount Washington',
+            points: 200,
+        },
+        {
+            question: 'This is city has the moniker of the Windy city',
+            answer: 'Chicago',
+            choices: 'Boston, Windyton, Chicago, New York',
+            points: 300,
+        },
+        {
+            question: 'All we are is dust in the wind is a ling from which stately band',
+            answer: 'Kansas',
+            choices: 'Georgia, Florida, Kansas, California',
+            points: 400,
+        },
+];
 
-elementGetById.('100A').onclick = alert;
-$('.earth100').on('click', function() {
-    $(this).addClass('disabled');
-    const y = $.prompt(earthQuestions[0].question, `Type ${earthQuestions[0].choices}`);
+ $('.earthOneHundred').click( function($event) {
+    $('.earthOneHundred').addClass('disabled');
+    const y = prompt(earthQuestions[0].question, `Type ${earthQuestions[0].choices}`);
     if (y === earthQuestions[0].answer) {
         alert('Correct!');
-        score += earthQuestions[0].points;
+        score += Questions[0].points;
         $('.scoreUpdate').html(score);
     }
     else {
         alert('Incorrect');
-        score -= earthQuestions[0].points;
+        score -= Questions[0].points;
         $('.scoreUpdate').html(score);
     }
 });
 
+$('.earthTwoHundred').click( function($event) {
+    $('.earthTwoHundred').addClass('disabled');
+    const y = prompt(earthQuestions[0].question, `Type ${earthQuestions[1].choices}`);
+    if (y === earthQuestions[1].answer) {
+        alert('Correct!');
+        score += Questions[0].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[1].points;
+        $('.scoreUpdate').html(score);
+    }
+});
+$('.earthThreeHundred').click( function($event) {
+    $('.earthThreeHundred').addClass('disabled');
+    const y = prompt(earthQuestions[0].question, `Type ${earthQuestions[2].choices}`);
+    if (y === earthQuestions[1].answer) {
+        alert('Correct!');
+        score += Questions[0].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[1].points;
+        $('.scoreUpdate').html(score);
+    }
+});
+$('.earthTwoHundred').click( function($event) {
+    $('.earthTwoHundred').addClass('disabled');
+    const y = prompt(earthQuestions[0].question, `Type ${earthQuestions[1].choices}`);
+    if (y === earthQuestions[1].answer) {
+        alert('Correct!');
+        score += Questions[0].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[1].points;
+        $('.scoreUpdate').html(score);
+    }
+});
+$('.earthFourHundred').click( function($event) {
+    $('.earthFourHundred').addClass('disabled');
+    const y = prompt(earthQuestions[0].question, `Type ${earthQuestions[3].choices}`);
+    if (y === earthQuestions[1].answer) {
+        alert('Correct!');
+        score += Questions[0].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[1].points;
+        $('.scoreUpdate').html(score);
+    }
+});
