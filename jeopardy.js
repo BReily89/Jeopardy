@@ -54,15 +54,15 @@ const windQuestions = [
 ];
 const fireQuestions = [
     {
-        question: 'This Ray Bradbury book is titled for the tempeture at which fire burns paper',
+        question: 'This Ray Bradbury book is titled for the temperture at which fire burns paper',
         answer: 'Farenheint 451',
         choices: '100K, fahrenheit 451, 212C, 98 degrees',
         points: 100,
     },
     {
         question: ' Only this bear says you can prevent forest fires ',
-        answer: 'Smokey the Bear',
-        choices: 'Winnie the pooh, Smoke the Bear, Yogi Bear, Beaver Bear',
+        answer: 'Smokie the Bear',
+        choices: 'Winnie the pooh, Smokie the Bear, Yogi Bear, Beaver Bear',
         points: 200,
     },
     {
@@ -279,21 +279,6 @@ $('.fireFourHundred').click(function ($event) {
     }
 });
 $('.potentPotablesOneHundred').click(function ($event) {
-    $('.potentPotablesThreeHundred').addClass('disabled');
-    const y = prompt(potentPotablesQuestions[0].question, `Type ${potentPotablesQuestions[0].choices}`);
-    if (y === potentPotablesQuestions[0].answer) {
-        alert('Correct!');
-        score += Questions[0].points;
-        $('.scoreUpdate').html(score);
-    }
-    else {
-        alert('Incorrect');
-        score -= Questions[0].points;
-        $('.scoreUpdate').html(score);
-    }
-});
-
-$('.potentPotablesOneHundred').click(function ($event) {
     $('.potentPotablesOneHundred').addClass('disabled');
     const y = prompt(potentPotablesQuestions[0].question, `Type ${potentPotablesQuestions[0].choices}`);
     if (y === potentPotablesQuestions[0].answer) {
@@ -325,6 +310,21 @@ $('.potentPotablesTwoHundred').click(function ($event) {
 
 $('.potentPotablesThreeHundred').click(function ($event) {
     $('.potentPotablesThreeHundred').addClass('disabled');
+    const y = prompt(potentPotablesQuestions[2].question, `Type ${potentPotablesQuestions[2].choices}`);
+    if (y === potentPotablesQuestions[2].answer) {
+        alert('Correct!');
+        score += Questions[2].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[2].points;
+        $('.scoreUpdate').html(score);
+    }
+});
+
+$('.potentPotablesFourHundred').click(function ($event) {
+    $('.potentPotablesFourHundred').addClass('disabled');
     const y = prompt(potentPotablesQuestions[3].question, `Type ${potentPotablesQuestions[3].choices}`);
     if (y === potentPotablesQuestions[3].answer) {
         alert('Correct!');
