@@ -6,8 +6,9 @@ color: #E1E108;
 body {
     background-color: #1010AF;
 }
-#Categories{
+.Categories{
     color:yellow;
+    border:1px;
 }
 
 
