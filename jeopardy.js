@@ -46,11 +46,37 @@ const earthQuestions = [
             points: 300,
         },
         {
-            question: 'All we are is dust in the wind is a ling from which stately band',
+            question: 'All we are is dust in the wind is a line from which stately band',
             answer: 'Kansas',
             choices: 'Georgia, Florida, Kansas, California',
             points: 400,
         },
+];
+const fireQuestions = [
+    {
+        question: 'This Ray Bradbury book is titled for the tempeture at which fire burns paper',
+        answer: 'Farenheint 451',
+        choices:'100K, fahrenheit 451, 212C, 98 degrees',
+        points: 100,
+    },
+    {
+        question: ' Only this bear says you can prevent forest fires ',
+        answer: 'Smokey the Bear',
+        choices: 'Winnie the pooh, Smoke the Bear, Yogi Bear, Beaver Bear',
+        points: 200,
+    },
+    {
+        question: 'Which "Earth Wind and Fire" band member was the self proclaimed "fire" of the group',
+        answer: 'Ralph Johnson',
+        choices: 'Phillip Baily, Ralph Johnson, Vernable white, I made this up',
+        points: 300,
+    },
+    {
+        question: 'This top "Earth Wind and Fire single is also a Month',
+        answer: 'September',
+        choices: 'Novemeber, September, December, August',
+        points: 400,
+    },
 ];
 
  $('.earthOneHundred').click( function($event) {
@@ -111,7 +137,7 @@ $('.earthFourHundred').click( function($event) {
     }
 });
 // Functions about Wind
-$('.winOneHundred').click( function($event) {
+$('.windOneHundred').click( function($event) {
     $('.windOneHundred').addClass('disabled');
     const y = prompt(windQuestions[0].question, `Type ${windQuestions[0].choices}`);
     if (y === windQuestions[0].answer) {
@@ -125,3 +151,102 @@ $('.winOneHundred').click( function($event) {
         $('.scoreUpdate').html(score);
     }
 });
+$('.windTwoHundred').click( function($event) {
+    $('.windTwoHundred').addClass('disabled');
+    const y = prompt(windQuestions[1].question, `Type ${windQuestions[1].choices}`);
+    if (y === windQuestions[1].answer) {
+        alert('Correct!');
+        score += Questions[1].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[1].points;
+        $('.scoreUpdate').html(score);
+    }
+});
+$('.windThreeHundred').click( function($event) {
+    $('.windThreeHundred').addClass('disabled');
+    const y = prompt(windQuestions[2].question, `Type ${windQuestions[2].choices}`);
+    if (y === windQuestions[2].answer) {
+        alert('Correct!');
+        score += Questions[2].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[2].points;
+        $('.scoreUpdate').html(score);
+    }
+});
+$('.windFourHundred').click( function($event) {
+    $('.windFourHundred').addClass('disabled');
+    const y = prompt(windQuestions[3].question, `Type ${windQuestions[3].choices}`);
+    if (y === windQuestions[3].answer) {
+        alert('Correct!');
+        score += Questions[3].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[3].points;
+        $('.scoreUpdate').html(score);
+    }
+});
+        $('.fireOneHundred').click( function($event) {
+            $('.fireOneHundred').addClass('disabled');
+            const y = prompt(fireQuestions[0].question, `Type ${fireQuestions[0].choices}`);
+            if (y === fireQuestions[0].answer) {
+                alert('Correct!');
+                score += Questions[0].points;
+                $('.scoreUpdate').html(score);
+            }
+            else {
+                alert('Incorrect');
+                score -= Questions[0].points;
+                $('.scoreUpdate').html(score);
+            }
+        });
+        
+        $('.fireTwoHundred').click( function($event) {
+            $('.fireTwoHundred').addClass('disabled');
+            const y = prompt(fireQuestions[1].question, `Type ${fireQuestions[1].choices}`);
+            if (y === fireQuestions[1].answer) {
+                alert('Correct!');
+                score += Questions[1].points;
+                $('.scoreUpdate').html(score);
+            }
+            else {
+                alert('Incorrect');
+                score -= Questions[1].points;
+                $('.scoreUpdate').html(score);
+            }
+        });
+        $('.fireThreeHundred').click( function($event) {
+            $('.fireThreeHundred').addClass('disabled');
+            const y = prompt(fireQuestions[2].question, `Type ${fireQuestions[2].choices}`);
+            if (y === earthQuestions[2].answer) {
+                alert('Correct!');
+                score += Questions[2].points;
+                $('.scoreUpdate').html(score);
+            }
+            else {
+                alert('Incorrect');
+                score -= Questions[2].points;
+                $('.scoreUpdate').html(score);
+            }
+        });
+        $('.fireFourHundred').click( function($event) {
+            $('.fireFourHundred').addClass('disabled');
+            const y = prompt(fireQuestions[3].question, `Type ${fireQuestions[3].choices}`);
+            if (y === fireQuestions[3].answer) {
+                alert('Correct!');
+                score += Questions[3].points;
+                $('.scoreUpdate').html(score);
+            }
+            else {
+                alert('Incorrect');
+                score -= Questions[3].points;
+                $('.scoreUpdate').html(score);
+            }
+        });
