@@ -1,4 +1,6 @@
 
+let score = 0
+
 const earthQuestions = [
     {
         question: 'Earth is also know as *blank rock* from the sun',
@@ -336,6 +338,7 @@ $('.potentPotablesFourHundred').click(function ($event) {
         score -= Questions[3].points;
         $('.scoreUpdate').html(score);
     }
-
 });
+
+
 
