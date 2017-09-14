@@ -70,10 +70,10 @@ const earthQuestions = [
 
 $('.earthTwoHundred').click( function($event) {
     $('.earthTwoHundred').addClass('disabled');
-    const y = prompt(earthQuestions[0].question, `Type ${earthQuestions[1].choices}`);
+    const y = prompt(earthQuestions[1].question, `Type ${earthQuestions[1].choices}`);
     if (y === earthQuestions[1].answer) {
         alert('Correct!');
-        score += Questions[0].points;
+        score += Questions[1].points;
         $('.scoreUpdate').html(score);
     }
     else {
@@ -84,43 +84,44 @@ $('.earthTwoHundred').click( function($event) {
 });
 $('.earthThreeHundred').click( function($event) {
     $('.earthThreeHundred').addClass('disabled');
-    const y = prompt(earthQuestions[0].question, `Type ${earthQuestions[2].choices}`);
-    if (y === earthQuestions[1].answer) {
+    const y = prompt(earthQuestions[2].question, `Type ${earthQuestions[2].choices}`);
+    if (y === earthQuestions[2].answer) {
         alert('Correct!');
-        score += Questions[0].points;
+        score += Questions[2].points;
         $('.scoreUpdate').html(score);
     }
     else {
         alert('Incorrect');
-        score -= Questions[1].points;
-        $('.scoreUpdate').html(score);
-    }
-});
-$('.earthTwoHundred').click( function($event) {
-    $('.earthTwoHundred').addClass('disabled');
-    const y = prompt(earthQuestions[0].question, `Type ${earthQuestions[1].choices}`);
-    if (y === earthQuestions[1].answer) {
-        alert('Correct!');
-        score += Questions[0].points;
-        $('.scoreUpdate').html(score);
-    }
-    else {
-        alert('Incorrect');
-        score -= Questions[1].points;
+        score -= Questions[2].points;
         $('.scoreUpdate').html(score);
     }
 });
 $('.earthFourHundred').click( function($event) {
     $('.earthFourHundred').addClass('disabled');
-    const y = prompt(earthQuestions[0].question, `Type ${earthQuestions[3].choices}`);
-    if (y === earthQuestions[1].answer) {
+    const y = prompt(earthQuestions[3].question, `Type ${earthQuestions[3].choices}`);
+    if (y === earthQuestions[3].answer) {
+        alert('Correct!');
+        score += Questions[3].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[3].points;
+        $('.scoreUpdate').html(score);
+    }
+});
+// Functions about Wind
+$('.winOneHundred').click( function($event) {
+    $('.windOneHundred').addClass('disabled');
+    const y = prompt(windQuestions[0].question, `Type ${windQuestions[0].choices}`);
+    if (y === windQuestions[0].answer) {
         alert('Correct!');
         score += Questions[0].points;
         $('.scoreUpdate').html(score);
     }
     else {
         alert('Incorrect');
-        score -= Questions[1].points;
+        score -= Questions[0].points;
         $('.scoreUpdate').html(score);
     }
 });
