@@ -295,6 +295,21 @@ $('.potentPotablesOneHundred').click(function ($event) {
 
 $('.potentPotablesOneHundred').click(function ($event) {
     $('.potentPotablesOneHundred').addClass('disabled');
+    const y = prompt(potentPotablesQuestions[0].question, `Type ${potentPotablesQuestions[0].choices}`);
+    if (y === potentPotablesQuestions[0].answer) {
+        alert('Correct!');
+        score += Questions[0].points;
+        $('.scoreUpdate').html(score);
+    }
+    else {
+        alert('Incorrect');
+        score -= Questions[0].points;
+        $('.scoreUpdate').html(score);
+    }
+});
+
+$('.potentPotablesTwoHundred').click(function ($event) {
+    $('.potentPotablesTwoHundred').addClass('disabled');
     const y = prompt(potentPotablesQuestions[1].question, `Type ${potentPotablesQuestions[1].choices}`);
     if (y === potentPotablesQuestions[1].answer) {
         alert('Correct!');
@@ -308,23 +323,8 @@ $('.potentPotablesOneHundred').click(function ($event) {
     }
 });
 
-$('.potentPotablesTwoHundred').click(function ($event) {
-    $('.potentPotablesTwoHundred').addClass('disabled');
-    const y = prompt(potentPotablesQuestions[2].question, `Type ${potentPotablesQuestions[2].choices}`);
-    if (y === potentPotablesQuestions[2].answer) {
-        alert('Correct!');
-        score += Questions[2].points;
-        $('.scoreUpdate').html(score);
-    }
-    else {
-        alert('Incorrect');
-        score -= Questions[2].points;
-        $('.scoreUpdate').html(score);
-    }
-});
-
-$('.potentPotablesFourHundred').click(function ($event) {
-    $('.potentPotablesFourHundred').addClass('disabled');
+$('.potentPotablesThreeHundred').click(function ($event) {
+    $('.potentPotablesThreeHundred').addClass('disabled');
     const y = prompt(potentPotablesQuestions[3].question, `Type ${potentPotablesQuestions[3].choices}`);
     if (y === potentPotablesQuestions[3].answer) {
         alert('Correct!');
