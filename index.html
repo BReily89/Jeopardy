@@ -2,101 +2,68 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">       
-        <link rel="stylesheet" type="text/css" href="jeopardy.css">
-       
-        <title>JEOPARDY</title>
-        <header>JEOPARDY!</header>
- </head>
-    
-    <body>
-            <div class='Game-Board'>
-                <table class='Categories'>
-                    <tr>
-                        <th>Category 1</th>
-                        <th>Category 2</th>
-                        <th>Category 3</th>
-                        <th>Category 4</th>
-                        <th>Category 5</th>
-                        <tr id= 'Answers'>
-                        </tr>
-                            <td class=' A1' id=' A2'>
-                                $100<button style="height:10px; width:10px">Q
-                            </td>
-                                <td class='A' id=' A2'>
-                                    $200<button style="height:10px; width:10px">Q
-                                </td>
-                                <td id=' A3'>
-                                    $300<button style="height:10px; width:10px">Q
-                                </td>
-                                <td =' A4'>
-                                    $400<button style="height:10px; width:10px">Q
-                                </td>
-                                <td id=' A5'>
-                                    $500<button style="height:10px; width:10px">Q
-                                </td>
-                                </tr>
-                                <td id=' B1'>
-                                $100<button style="height:10px; width:10px">Q
-                                 </td>
-                        <td id=' B2'>
-                            $200<button style="height:10px; width:10px">Q
-                        </td>
-                        <td id=' B3'>
-                            $300<button style="height:10px; width:10px">Q
-                        </td>
-                        <td id=' B4'>
-                            $400<button style="height:10px; width:10px">Q
-                        </td>
-                        <td id= ' B5'>
-                            $500<button style="height:10px; width:10px">Q
-                        </td>
-                        <tr>
-                        <td id =' C1'>
-                            $100<button style="height:10px; width:10px">Q
-                        </td>
-                        <td id=' C2'>
-                            $200<button style="height:10px; width:10px">Q
-                        </td>
-                        <td id=' C3'>
-                            $300<button style="height:10px; width:10px">Q
-                        </td>
-                        <td id=' C4'>
-                            $400<button style="height:10px; width:10px">Q
-                        </td>
-                        <td id=' C5'>
-                            $500<button style="height:10px; width:10px">Q
-                        </td>
-                        </tr>
-                    </tr>
-                   <td id= 'D1'>
-                       $100<button style="height:10px; width:10px">Q
-                   </td>
-                   <td id=' D2'>
-                       $200<button style="height:10px; width:10px">Q
-                   </td>
-                   <td id=' D3'>
-                       $300<button style="height:10px; width:10px">Q
-                   </td>
-                   <td id =' D4'>
-                       $400<button style="height:10px; width:10px;">Q
-                       </td>
-                    <td id=' D5'>
-                        $500<button style="height:10px; width:10px">Q
-                    </td>
-                    </tr>
-                    <tr>
-                        <td id=' Player 1'>
-                            Player 1
-                        </td>
-                        <td id=' Player 2'>
-                            Player 2
-                        </td>
-                    </tr>
-                </table>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+        media="screen,projection" />
+                <link rel="stylesheet" type="text/css" href="jeopardy.css">
+
+</head>
+<title>JEOPARDY</title>
+<title>JEOPARDY</title>
+
+
+
+<body>
+    <div class='container'>
+        <div class='row center'>
+                <img class="img-responsive" src="https://vignette.wikia.nocookie.net/gameshows/images/9/9e/365508.jpg/revision/latest?cb=20140129073357">
+                
+        </div>
+        <h5>
+            <div class='row center Categories'>
+                <div class=' col s3'>Earth</div>
+                <div class='col s3'>Wind</div>
+                <div class='col s3'>Fire</div>
+                <div class='col s3'>Potent Potables</div>
             </div>
-     </body>
-     
+        </h5>
+        <div class='row center section $100'>
+            <div class='btn col s3 earthOneHundred'>$100</div>
+            <div class='btn col s3 windOneHundred'>$100</div>
+            <div class='btn col s3 fireOneHundred'>$100</div>
+            <div class='btn col s3 potentPotablesOneHundred'>$100</div>
+        </div>
+        <div class='row center section $200'>
+            <div class='btn col s3 earthTwoHundred'>$200</div>
+            <div class='btn col s3 windTwoHundred'>$200</div>
+            <div class='btn col s3 fireTwoHundred'>$200</div>
+            <div class='btn col s3 potentPotablesTwoHundred'>$200</div>
+        </div>
+        <div class='row center section $300'>
+            <div class='btn col s3 earthThreeHundred'>$300</div>
+            <div class='btn col s3 windThreeHundred'>$300</div>
+            <div class='btn col s3 fireThreeHundred'>$300</div>
+            <div class='btn col s3 potentPotablesThreeHundred'>$300</div>
+        </div>
+        <div class='row center section $400'>
+            <div class='btn col s3 earthFourHundred'>$400</div>
+            <div class='btn col s3 windFourHundred'>$400</div>
+            <div class='btn col s3 fireFourHundred'>$400</div>
+            <div class='btn col s3 potentPotablesFourHundred'>$400</div>
+        </div>
+        <button class='NewGame' type="reset" value="Reset">Start new Game</button>
+        <div class="input-field col s3">
+        <h5>Score = <span class='scoreUpdate'>0</span></h5>
+       </div>
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="./jeopardy.js"></script>
+</body>
+
 </html>

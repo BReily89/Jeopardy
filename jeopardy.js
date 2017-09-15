@@ -4,12 +4,12 @@ let score = 0
 const earthQuestions = [
     {
         question: 'Earth is also know as *blank rock* from the sun',
-        answer: '4th',
-        choices: '1st, 3ed, 4th, 5th',
+        answer: '3rd',
+        choices: '1st, 3rd, 4th, 5th',
         points: 100,
     },
     {
-        question: 'Earths Deepest Trech is the ',
+        question: 'Earths Deepest Trench is the ',
         answer: 'Mariana Trench',
         choices: 'Your Mom , Grand Canyon, Mariana Trench, or The Nile River Basin',
         points: 200,
@@ -21,7 +21,7 @@ const earthQuestions = [
         points: 300,
     },
     {
-        question: 'Earth, Water, Fire and wind, all said in unison with silly rings summons this fictious super-hero',
+        question: 'Earth, Water, Fire and wind, all said in unison, with silly rings summons this fictious super-hero',
         answer: 'Captain Planet',
         choices: 'Capt-n Crunch, Captain Planet, Xenu... you know, that Scientology guy, or Lucifer',
         points: 400,
@@ -42,7 +42,7 @@ const windQuestions = [
         points: 200,
     },
     {
-        question: 'This is city has the moniker of the Windy city',
+        question: 'This city has the moniker of the Windy city',
         answer: 'Chicago',
         choices: 'Boston, Windyton, Chicago, New York',
         points: 300,
@@ -339,10 +339,11 @@ $('.potentPotablesFourHundred').click(function ($event) {
     }
 });
 
-$('.NewGame').click(function ($event){
-   form.reset()
+$('.NewGame').click(function refreshPage(){
+    window.location.reload();
+
     
 
-})
+});
 
 
